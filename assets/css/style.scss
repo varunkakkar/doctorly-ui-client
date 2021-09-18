@@ -1,0 +1,15 @@
+/* Fonts Load */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap');
+
+:root{
+    --f-thin: 100;
+    --f-regular: 400;
+    --f-medium:500;
+    --f-bold:700;
+    --f-black:900;
+    --c-primary: #264653;
+    --c-secondary: #2a9d8f;
+    --c-tertiary: #e9c46a;
+    --c-quarternery: #f4a261;
+    font-weight: var(--f-regular)
+}

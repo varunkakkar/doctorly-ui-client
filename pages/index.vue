@@ -1,5 +1,7 @@
 <template>
-  <Tutorial/>
+  <main>
+    <NonProtectedNavBar/>
+  </main>
 </template>
 
 <script>
