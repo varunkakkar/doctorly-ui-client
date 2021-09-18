@@ -1,0 +1,177 @@
+/* Fonts Load */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap");
+:root {
+  --f-thin: 100;
+  --f-normal: 300;
+  --f-regular: 400;
+  --f-medium: 500;
+  --f-bold: 700;
+  --f-black: 900;
+  --fs-tiny: 1rem;
+  --fs-regular: 1.6rem;
+  --fs-medium: 2.4rem;
+  --fs-large: 3rem;
+  --fs-huge: 4rem;
+  --fs-heading: 5rem;
+  --c-primary: #264653;
+  --c-secondary: #2a9d8f;
+  --c-tertiary: #e9c46a;
+  --c-quarternary: #f4a261;
+
+  font-weight: var(--f-regular);
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+.nav {
+  .brand {
+    h3 {
+      font-weight: var(--f-bold);
+      margin: 1rem;
+    }
+  }
+
+  .link {
+    font-weight: var(--f-bold);
+    font-size: var(--fs-regular);
+  }
+
+  @media screen and (min-width: map-get($map: $grid-breakpoints, $key: xs)) and (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
+      .link{
+          border-right: 1px solid black;
+      }
+      .nav-right{
+          padding: 20px;
+      }
+  }
+}
+
+main {
+  #hero {
+    background-image: url(~/assets/img/home/hero-bg.png);
+    background-size: cover;
+    padding-top: 100px;
+    .left {
+      padding-top: 10rem;
+
+      h1 {
+        font-size: var(--fs-heading);
+        font-weight: var(--f-bold);
+      }
+      .primary {
+        background-color: var(--c-primary);
+        font-size: var(--fs-medium);
+        font-weight: var(--f-medium);
+        line-height: 1.8;
+      }
+    }
+  }
+
+  #statistics {
+    padding-top: 100px;
+    .stats {
+      padding: 30px;
+      background-color: white;
+      width: 100%;
+      background-image: url(~/assets/img/home/stats-card-bg.png);
+      background-size: cover;
+      header {
+        h1 {
+          font-size: var(--fs-huge);
+        }
+        h3 {
+          font-size: var(--fs-regular);
+          font-weight: var(--f-normal);
+        }
+      }
+      .stat {
+        border-right: 0.5px solid white;
+        display: grid;
+        vertical-align: middle;
+        .value {
+          font-size: var(--fs-huge);
+          font-weight: var(--f-bold);
+          margin-bottom: 0;
+        }
+        .description {
+          font-size: var(--fs-medium);
+        }
+      }
+      .stat:last-of-type{
+        border-right: none;
+      }
+      @media screen and (min-width: map-get($map: $grid-breakpoints, $key: xs)) and (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
+          .stat{
+              padding: 20px 0;
+              border: 1px solid var(--c-primary);
+              background-color: white;
+              p{
+                  color: black!important;
+              }
+          }
+      }
+    }
+    @media screen and (min-width: map-get($map: $grid-breakpoints, $key: xs)) and (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
+        .stats{ 
+
+        }
+    }
+
+  }
+
+  #howitworks{
+      padding-top: 100px;
+      .header{
+          h1{
+            font-size: var(--fs-heading);
+            font-weight: var(--f-bold)
+          }
+      }
+      .step{
+          text-align: center;
+          img{
+              width:200px;
+          }
+          h2{
+              font-size: var(--fs-medium);
+              font-weight: var(--f-bold);
+          }
+          p{
+              font-weight: var(--f-normal);
+          }
+      }
+  }
+
+  @media screen and (min-width: map-get($map: $grid-breakpoints, $key: xs)) and (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
+    #hero {
+      height: 100%;
+      padding-top: 150px;
+      .left {
+        padding-top: 0;
+        padding-bottom: 10rem;
+        text-align: center;
+        h1 {
+          font-size: var(--fs-huge);
+        }
+      }
+      .right {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.bd-none {
+  border: none !important;
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
