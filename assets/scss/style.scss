@@ -118,9 +118,7 @@ main {
       }
     }
     @media screen and (min-width: map-get($map: $grid-breakpoints, $key: xs)) and (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
-        .stats{ 
-
-        }
+        
     }
 
   }
