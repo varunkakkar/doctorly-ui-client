@@ -3,7 +3,7 @@
     <div class="nav-left">
       <a class="brand">
         <ItemsLogo />
-        Doctor's Appointment
+        Doctorly
       </a>
     </div>
   </nav>
