@@ -18,6 +18,7 @@ export default {
     '~/assets/css/reset.css',
     '~/assets/css/chota.css',
     '~/assets/scss/style.scss',
+    '~/assets/scss/login.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

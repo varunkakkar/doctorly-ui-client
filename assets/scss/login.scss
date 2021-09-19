@@ -1,1 +1,81 @@
 // Login Page CSS
+@import "style.scss";
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+    .inner {
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+      .form-group {
+        margin: 2rem 0 !important;
+        text-align: center;
+        input {
+          border-radius: 0 !important;
+          border-color: var(--c-tertiary) !important;
+        }
+        input:focus {
+          border-width: 5px !important;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          transform: translate3d(0, 0, 0);
+          backface-visibility: hidden;
+          perspective: 1000px;
+        }
+        @keyframes shake {
+          10%,
+          90% {
+            transform: translate3d(-1px, 0, 0);
+          }
+
+          20%,
+          80% {
+            transform: translate3d(2px, 0, 0);
+          }
+
+          30%,
+          50%,
+          70% {
+            transform: translate3d(-4px, 0, 0);
+          }
+
+          40%,
+          60% {
+            transform: translate3d(4px, 0, 0);
+          }
+        }
+        button.success{
+            background-color: var(--c-secondary);
+        }
+      }
+      header {
+        h1 {
+          font-size: var(--fs-heading);
+          font-weight: var(--f-black);
+          color: var(--c-primary);
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+
+.gradient-purple {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.thin{
+    font-weight: var(--f-medium)!important;
+}
+
+.icon{
+    width: 80px;
+
+}
