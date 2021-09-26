@@ -22,6 +22,8 @@ This app template is for a Doctorly - Doctors Virtual Assistant Application - Cl
 - Book an Appointment
 - View Your Appointments
 - View Appointment
+    - View Prescriptions
+    - View Follow-ups
 - Settings
 
 #### Components

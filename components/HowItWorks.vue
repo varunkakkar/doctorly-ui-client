@@ -5,7 +5,7 @@
         <div class="col-12 text-center header">
           <h1>How it works</h1>
         </div>
-        <div class="col col-md-4 step" v-for="step in steps" :key="step.id">
+        <div class="col col-4-md step" v-for="step in steps" :key="step.id">
           <img :src="step.image" alt="" srcset="" />
           <h2>{{ step.value }}</h2>
           <p>{{ step.description }}</p>

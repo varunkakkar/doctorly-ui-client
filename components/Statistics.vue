@@ -11,7 +11,8 @@
           </header>
           <div class="row">
             <div
-              class="col col-md-3 stat"
+              class="col col-3-md
+               stat"
               v-for="statistic in statistics"
               :key="statistic.id"
             >
